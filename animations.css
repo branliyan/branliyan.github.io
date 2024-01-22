@@ -1,0 +1,159 @@
+
+
+#tag1{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+#tag2{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+
+#tag3{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+/*This is for the text animation*/
+
+#l1{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.1s;
+}
+
+#l2{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.3s;
+}
+
+
+#l3{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.5s;
+}
+#l4{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.6s;
+}
+
+#l5{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.7s;
+}
+
+
+#l6{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.8s;
+}
+#l7{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 0.9s;
+}
+
+#l8{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 1s;
+}
+
+
+#l9{
+    opacity: 0;
+    animation: fadeIn 0s ease-in-out forwards;
+    animation-delay: 1.1s;
+}
+
+#l10{
+    opacity: 0;
+    animation: fadeIn 0s ease-in-out forwards;
+    animation-delay: 1.2s;
+}
+
+#l11{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 1.3s;
+}
+
+
+#l12{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 1.4s;
+}
+
+#l13{
+    opacity: 0;
+    animation: fadeIn 0s ease forwards;
+    animation-delay: 1.5s;
+}
+
+
+
+
+nav ul li:hover a { /*This is for when an element is hovered over*/
+    background-image: linear-gradient(to right, #4e54c8, #8f94fb); /* Gradient text color */
+    -webkit-background-clip: text; /* Set background-clip for WebKit browsers */
+    color: transparent; /* Make text transparent to show the gradient through it */
+    transform: scale(1.05);
+}
+
+/*This is used to make divs fade in when the web page is loaded*/
+.fade-in {
+    opacity: 0; /*Start with zero opacity*/
+    animation: fadeIn 0.6s linear forwards; /*Animation duration and easing function*/
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /*Starting opacity*/
+    }
+    to {
+        opacity: 1; /*Ending opacity*/
+    }
+}
+
+.skills-languages:hover{
+    transform: scale(1.05);
+}
+
+.skills-description:hover{
+    transform: scale(1.05);
+}
+
+.personal-description:hover{
+    transform: scale(1.05);
+}
+
+.image:hover{
+    transform: scale(1.05);
+}
+
+
+.text-generate::before{
+    content: attr(data-text);
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text-generate span{
+    opacity: 0;
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    animation: fadeIn 0s forwards;
+    margin-left: auto;
+    margin-right: auto;
+}

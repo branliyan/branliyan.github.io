@@ -1,0 +1,225 @@
+* {box-sizing: border-box;}
+
+[class*="col-"] {
+    float:left;
+    padding:15px;
+}
+
+/* for mobile */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* for tablet */
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 16.67%}
+    .col-2 {width: 33.33%}
+    .col-3 {width: 50%}
+    .col-4 {width: 66.67%}
+    .col-5 {width: 83.33%}
+    .col-6 {width: 100%}
+}
+
+/* for PC */
+@media only screen and (min-width: 1024px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.row::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+
+
+
+header{
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%; /*Makes it so that the header makes up 100% of the viewport*/
+    display: flex; /*This makes it so that the content inside of the header is not stacked*/
+    justify-content: space-between; /*Makes it so that there is space between elements in the header*/
+    align-items: center; /*Makes it so that everything is cetnered verticaly*/
+    font-family: 'Poppins', sans-serif;
+    z-index: 50; /*This makes it so that the header is always on top of other content in the page*/
+    padding: 0;
+    background-color: white;
+    font-size: 170%; /* Adjust the font size based on viewport width */
+}
+
+footer{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    padding: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-title{
+    margin: 0;
+    transform: scale(0.7);
+    color: black;
+}
+
+
+.caption {
+    margin: 0;
+    transform: scale(0.7);
+    background-image: linear-gradient(to right, #4e54c8, #8f94fb); /* Gradient text color */
+    -webkit-background-clip: text; /* Set background-clip for WebKit browsers */
+    color: transparent; /* Make text transparent to show the gradient through it */
+
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 24px;
+    padding-left: 400px;
+
+}
+
+nav ul li{
+    padding-right: 60px;
+    transition: color 3s ease; /*Makes it so that there is an animation for when it changes colour*/
+}
+
+nav ul li a {
+    text-decoration: none; /*This makes it so there are no underlines*/
+    color: black;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0; /*This is to remove the default padding*/
+}
+
+li{
+    justify-content: space-between;
+}
+
+body{
+    background-color: #dceaf5;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    display: flex;
+}
+
+.personal-description{
+    max-width: 700px;
+    max-height: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ebfef8;
+    box-shadow: 0 0 10px rgba(99, 97, 97, 0.1);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.3s ease;
+    margin-top: 300px;
+}
+img{
+    border-radius: 50px;
+    max-width: 580px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.image{
+    box-sizing: border-box;
+    max-width: 600px;
+    max-height: 600px;
+    background-color: #ebfef8;
+    box-shadow: 0 0 10px rgba(99, 97, 97, 0.1);
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 235px;
+    transition: transform 0.3s ease;
+}
+
+/*Div to fully encompass the skills section*/
+.skillsSection{
+    margin: 0;
+    padding: 0;
+    margin-top: 12.8%;
+    padding-bottom: 1.5%;
+    width: 100%;
+    background-color: #f5e4dc;
+    font-family: 'Poppins', sans-serif;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 0 0 30px rgba(99, 97, 97, 0.3);
+}
+
+.skills-languages{
+    max-width: 600px;
+    margin: 0px auto; /*This makes the left and right margins auto which automatically centers it*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(99, 97, 97, 0.1);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+.skills-description{
+    max-width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(99, 97, 97, 0.1);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+
+/*This is to set the text color of the skills headings*/
+.skills-header {
+    margin: 0;
+    transform: scale(0.7);
+    background-image: linear-gradient(to right, #c8794e, #fbd08f); /* Gradient text color */
+    -webkit-background-clip: text; /* Set background-clip for WebKit browsers */
+    color: transparent; /* Make text transparent to show the gradient through it */
+}
